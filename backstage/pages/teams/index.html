@@ -1,0 +1,281 @@
+<!--
+=========================================================
+* Material Dashboard 2 - v3.0.5
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/material-dashboard
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://www.creative-tim.com/license)
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+  <title>
+    編輯團隊成員 | GDG Taipei 管理後臺
+  </title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href="../../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <link href="../../assets/css/material-dashboard.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../../assets/css/material-dashboard.min.css?v=3.0.6" rel="stylesheet">
+  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- Nepcha Analytics (nepcha.com) -->
+  <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+  <!-- <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script> -->
+</head>
+
+<body class="g-sidenav-show  bg-gray-200">
+  <aside
+    class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark"
+    id="sidenav-main">
+    <div class="sidenav-header" style="background-color: #ffffff;">
+      <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+        aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0" href="." >
+        <img src="../../../assets/img/branch/GDG Taipei.png" class="navbar-brand-img h-100" alt="main_logo">
+      </a>
+    </div>
+    <hr class="horizontal light mt-0 mb-2">
+    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../dashboard.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">dashboard</i>
+            </div>
+            <span class="nav-link-text ms-1">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item mt-3">
+          <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">版面清單</h6>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../mainPage/">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-building"></i>
+            </div>
+            <span class="nav-link-text ms-1">Home page</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white active " href="../teams/">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-circle-08"></i>
+            </div>
+            <span class="nav-link-text ms-1">團隊成員</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../annual_activity">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-calendar-grid-58"></i>
+            </div>
+            <span class="nav-link-text ms-1">Annual Events</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../partners">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="fa fa-users" aria-hidden="true"></i>
+            </div>
+            <span class="nav-link-text ms-1">Partners</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../social_networks">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </div>
+            <span class="nav-link-text ms-1">社群媒體</span>
+          </a>
+        </li>
+        <li class="nav-item mt-3">
+          <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">用戶管理</h6>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../../index.html" onclick="logout()">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">login</i>
+            </div>
+            <span class="nav-link-text ms-1">登出</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-xs px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
+      data-scroll="true">
+      <div class="container-fluid py-1 px-3">
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            <div id="user_para"></div>
+          </div>
+          <ul class="navbar-nav  justify-content-end">
+
+            
+            <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid py-4">
+      <div class="card mb-4">
+        <div class="card-header pb-0">
+          <div class="row col-md-12">
+            <div class="col-md-10">
+              <h3>管理成員名單</h3>
+            </div>
+            <div class="col-md-2">
+              <a class="btn bg-gradient-dark text-white font-weight-normal text-xs " data-bs-toggle="modal"
+                data-bs-target="#modal-default" onclick="newMember()">
+                <i class="fa fa-user me-sm-1"></i> 新增團隊成員
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body px-0 pt-0 pb-2">
+          <div class="table-responsive p-0">
+            <table class="table align-items-center mb-0">
+              <tbody id="form-content">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="table-responsive-md">
+          <table class="table align-items-center mb-0">
+            <tbody id="form-content">
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default"
+        aria-hidden="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title font-weight-normal" id="modal-title-default">編輯團隊成員</h6>
+              <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">X</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row align-items-center justify-content-md-center">
+                <div class="col-md-12"  style="text-align: center;">
+                  <img src="../assets/img/default.png" alt="Circle image" class="img-fluid rounded-circle shadow"
+                    style="width: 150px;" id="display-pic">
+                </div>
+              </div>
+              <form class="mt-4">
+                <div class="input-group input-group-static mb-4">
+                  <label>圖片網址</label>
+                  <input type="text" class="form-control bg-light" id="pic_url" disabled>
+                </div>
+                <label>上傳檔案更改圖片</label>
+                <div class="card card-body shadow mb-4">
+                  <table style="vertical-align: middle !important;">
+                    <tr>
+                      <td style="width: fit-content;">
+                        <input type="file" id="file">
+                      </td>
+                      <td style="width: 50%">
+                        <button type="button" class="btn btn-dark btn-lg" onclick="uploadFile()" id="upload-status" style="margin-bottom: 0px">上傳檔案</button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="input-group input-group-static mb-4">
+                  <label>姓</label>
+                  <input type="text" class="form-control" id="first_name">
+                </div>
+                <div class="input-group input-group-static mb-4">
+                  <label>名</label>
+                  <input type="text" class="form-control" id="last_name">
+                </div>
+                <div class="input-group input-group-static mb-4">
+                  <label>頭銜</label>
+                  <input type="text" class="form-control" id="title">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer col-md-12 " style="display: flex;
+            justify-content: center;
+            align-items: center;">
+                <a class="btn btn-danger btn-block btn-lg col-md-5 " data-bs-dismiss="modal" aria-label="Close">取消編輯</a>
+                <button type="button" class="btn btn-dark btn-block btn-lg col-md-5 " onclick="" id="update-content">儲存更改</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../../assets/js/core/popper.min.js"></script>
+  <script src="../../assets/js/core/bootstrap.min.js"></script>
+  <script src="../../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-storage.js"></script>
+  <script src="../../../assets/js/firebase/firebase.js"></script>
+  <script src="../../../assets/js/firebase/login.js"></script>
+  <script src="../../../assets/js/firebase/storage.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+  <script src="../../assets/js/teams/index.js"></script>
+
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../../assets/js/material-dashboard.min.js?v=3.0.6"></script>
+</body>
+
+</html>
