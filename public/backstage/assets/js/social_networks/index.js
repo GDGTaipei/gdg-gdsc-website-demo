@@ -35,7 +35,7 @@ myData.on('value', function(snapshot) {
       </td>
       <td class="col text-center">
           <a class="btn btn-outline-secondary" toast-btn" type="button" data-target="EventToast" onclick="upload('${key}')">
-            儲存
+            Save
           </a>
       </td>
     </tr>`
