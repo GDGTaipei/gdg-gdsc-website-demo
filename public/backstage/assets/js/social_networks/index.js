@@ -8,8 +8,8 @@ myData.on('value', function(snapshot) {
   let socialMediaList = snapshot.val();
 
   let displayRows = ` <thead> <tr>
-          <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder align-middle">社群媒體</th>
-          <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2 align-middle">網址</th>
+          <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder align-middle">Social Media</th>
+          <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2 align-middle">Website</th>
           <th class="text-center text-secondary opacity-7"></th>
         </tr></thead>` 
 
@@ -55,12 +55,12 @@ const upload = async(key)=> {
   try{
     
     await database.ref(`/social_networks/${key}`).update(inputValue);
-    swal(`「${capitalize(key)}」的網址已成功更新`, {
+    swal(`'${capitalize(key)}' uploaded`, {
         icon: "success",
       });
   }
   catch (error){
-    swal(`糟糕!「${capitalize(key)}」的更新發生錯誤`, {
+    swal(`Opps!'${capitalize(key)}' uploaded fail`, {
         icon: "warning",
       });
 

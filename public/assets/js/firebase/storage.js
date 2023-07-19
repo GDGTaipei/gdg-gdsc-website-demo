@@ -10,12 +10,12 @@ async function uploadFile() {
     document.getElementById("upload-status").disabled = true;
     document.getElementById('upload-status').classList.remove("btn-dark")
     document.getElementById('upload-status').classList.add("btn-danger")
-    document.getElementById('upload-status').innerHTML = `格式不符`
+    document.getElementById('upload-status').innerHTML = `file type not valid`
     await sleep(3000);
     document.getElementById("upload-status").disabled = false;
     document.getElementById('upload-status').classList.remove("btn-danger")
     document.getElementById('upload-status').classList.add("btn-dark")
-    document.getElementById('upload-status').innerHTML = `上傳檔案`
+    document.getElementById('upload-status').innerHTML = `file upload`
     document.getElementById("file").value = "";
     return 0
   }
@@ -24,12 +24,12 @@ async function uploadFile() {
     document.getElementById("upload-status").disabled = true;
     document.getElementById('upload-status').classList.remove("btn-dark")
     document.getElementById('upload-status').classList.add("btn-danger")
-    document.getElementById('upload-status').innerHTML = `檔案超過限制大小`
+    document.getElementById('upload-status').innerHTML = `file size reach limited`
     await sleep(3000);
     document.getElementById("upload-status").disabled = false;
     document.getElementById('upload-status').classList.remove("btn-danger")
     document.getElementById('upload-status').classList.add("btn-dark")
-    document.getElementById('upload-status').innerHTML = `上傳檔案`
+    document.getElementById('upload-status').innerHTML = `file upload`
     document.getElementById("file").value = "";
     return 0
   }
@@ -49,7 +49,7 @@ async function uploadFile() {
   
       document.getElementById("upload-status").disabled = true;
       var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-      document.getElementById('upload-status').innerHTML = `上傳中：${progress.toFixed(2)}%`
+      document.getElementById('upload-status').innerHTML = `Uploading：${progress.toFixed(2)}%`
 
       console.log("Upload progress: " + progress + "%");
     }, 
@@ -58,12 +58,12 @@ async function uploadFile() {
       console.log("Error uploading file: " + error);
       document.getElementById('upload-status').classList.remove("btn-dark")
       document.getElementById('upload-status').classList.add("btn-danger")  
-      document.getElementById('upload-status').innerHTML = `上傳過程發生錯誤`
+      document.getElementById('upload-status').innerHTML = `Fail`
       await sleep(3000);
       document.getElementById("upload-status").disabled = false;
       document.getElementById('upload-status').classList.remove("btn-danger")
       document.getElementById('upload-status').classList.add("btn-dark")
-      document.getElementById('upload-status').innerHTML = `上傳檔案`
+      document.getElementById('upload-status').innerHTML = `file upload`
       document.getElementById("file").value = "";
     }, 
     function() {
@@ -73,11 +73,11 @@ async function uploadFile() {
         document.getElementById('pic_url').value = downloadURL
         document.getElementById("display-pic").src = downloadURL
         document.getElementById("display-pic").style.backgroundImage = `url(${downloadURL})` 
-        document.getElementById('upload-status').innerHTML = `上傳成功`
+        document.getElementById('upload-status').innerHTML = `Success`
         await sleep(3000);
         document.getElementById('upload-status').classList.remove("btn-success")
         document.getElementById('upload-status').classList.add("btn-dark")
-        document.getElementById('upload-status').innerHTML = `上傳檔案`
+        document.getElementById('upload-status').innerHTML = `file upload`
         document.getElementById("upload-status").disabled = false;
         document.getElementById("file").value = "";
       });
