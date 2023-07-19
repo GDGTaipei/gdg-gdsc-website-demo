@@ -1,0 +1,128 @@
+{
+  "annual_activity": [
+    {
+      "description": "Since 2013, Women Techmakers Ambassadors around the world have hosted thousands of events in celebration of International Women’s Day. Varying from large summits to intimate gatherings, these events provide education, connection and inspiration for local tech communities.\n\nFor 2023, the theme of IWD is “Dare To Be.” Ambassadors will host events that empower their community to have the courage and confidence to dream big and take risks. Whether it’s bold, resilient, innovative or more, we invite everyone to think about all the ways you will “Dare To Be” in 2023!",
+      "link": "https://developers.google.com/womentechmakers/initiatives/iwd",
+      "pic_url": "https://firebasestorage.googleapis.com/v0/b/gdg-taipei.appspot.com/o/IWD.png?alt=media&token=854745df-6b56-4084-8021-1faaed419b8e",
+      "title": "International Women's Day"
+    },
+    {
+      "description": "Google I/O Extended is the community led counterpart to Google I/O, our annual Google led conference where the world hears about Google’s latest developer solutions, products, and technology.\n\nGoogle I/O Extended is a series of community led tech meetups, that bring the knowledge and excitement of Google I/O to developers on a city level, all around the globe.",
+      "link": "https://gdg.community.dev/ioextended/",
+      "pic_url": "https://firebasestorage.googleapis.com/v0/b/gdg-taipei.appspot.com/o/io-extended-header.png?alt=media&token=57516b28-c563-4dbd-8dba-b8aea3b0b7d9",
+      "title": "Google I/O Extended"
+    },
+    {
+      "description": "DevFests are local tech conferences hosted by Google Developer Groups (GDG) around the world. Each DevFest event is crafted by its local organizers to fit the needs and interests of its local developer community. Whether it be through hands-on learning experiences, technical talks delivered in local languages by experts, or by simply meeting fellow local developers, DevFest attendees learn how to build together and innovate on Google's developer tools.",
+      "link": "https://developers.google.com/community/devfest?hl=zh-tw",
+      "pic_url": "https://firebasestorage.googleapis.com/v0/b/gdg-taipei.appspot.com/o/devfest.gif?alt=media&token=8872a4ca-a697-457b-b638-74c9f719a88e",
+      "title": "DevFest"
+    }
+  ],
+  "main_page": {
+    "gdg-intro": "GDG Taipei (Google Developer Group Taipei) is a developer community primarily focused on researching Google-related technologies. It holds meetups on Wednesday evenings, where attendees deliver several Lightning Talks. It also periodically invites speakers to share specific topics and organizes activities such as hackathons or workshops.",
+    "main_url": "https://get.pxhere.com/photo/nature-horizon-mountain-snow-cloud-sky-sunlight-mountain-range-ice-weather-blue-mountain-top-alps-plateau-piste-atmosphere-of-earth-mountainous-landforms-9552.jpg",
+    "slogan-subtitle": "intro-subtite",
+    "slogan-title": "GDG Headline title",
+    "youtube-link": "8T0fgmZR94g"
+  },
+  "partners": [
+    {
+      "badge_color": "#0062ff",
+      "badge_title": "Cloud",
+      "description": "Hello everyone, we are Google Developer Group Cloud (GDG Cloud) Taipei Chapter. We are a community of enthusiasts interested in Google Cloud Platform and its related technologies. Our main goal is to share and exchange technical knowledge and experiences with Google Cloud Platform. We welcome anyone who is interested in Google Cloud Platform to join us and contribute to our community.",
+      "link": "https://gdg.tw/cloud_taipei",
+      "pic_url": "https://firebasestorage.googleapis.com/v0/b/hank199599.appspot.com/o/gdg_cloud_taipei.jpg?alt=media&token=391c96e5-ffbb-4ed1-ae91-412681400359",
+      "title": "Google Cloud Taipei"
+    },
+    {
+      "badge_color": "#25efc6",
+      "badge_title": "Woman Tech",
+      "description": "\nWomen Techmakers Taiwan (WTM Taiwan) is a community organization dedicated to promoting the development and participation of women in the field of technology. Established in 2015 with support from Google, WTM Taiwan aims to provide an interactive platform for women to learn, network, and stay updated with the latest advancements in the technology industry. Through events, seminars, workshops, courses, and gatherings, WTM Taiwan strives to empower women by equipping them with relevant skills, fostering confidence, expanding professional networks, and helping them achieve their personal and career goals.",
+      "link": "https://wtm.tw/",
+      "pic_url": "https://firebasestorage.googleapis.com/v0/b/hank199599.appspot.com/o/wtm_taipei.jpeg?alt=media&token=7a2c56c6-4308-4867-9d7a-1aacd0fd10c0",
+      "title": "Women Techmakers Taiwan"
+    }
+  ],
+  "social_networks": {
+    "LINE": {
+      "backgroundColor": "#06C755",
+      "borderColor": "#06C755",
+      "href": "",
+      "icon": "<i class='fab fa-line'></i>",
+      "originalTitle": "Join LINE"
+    },
+    "Telegram": {
+      "backgroundColor": "#0088cc",
+      "borderColor": "#0088cc",
+      "href": "",
+      "icon": " <i class='fab fa-telegram'></i>",
+      "originalTitle": "Join Telegram"
+    },
+    "discord": {
+      "backgroundColor": "#7289da",
+      "borderColor": "#7289da",
+      "href": "",
+      "icon": "<i class='fab fa-discord'></i>",
+      "originalTitle": "discord"
+    },
+    "facebook": {
+      "backgroundColor": "#3b5999",
+      "borderColor": "#3b5999",
+      "href": "",
+      "icon": "<span class='fab fa-facebook' data-icon='cib:meetup' data-inline='false'>",
+      "originalTitle": "Join Official FB Club"
+    },
+    "instagram": {
+      "backgroundColor": "#e4405f",
+      "borderColor": "#e4405f",
+      "href": "",
+      "icon": "<span class='fab fa-instagram' data-icon='cib:meetup' data-inline='false'>",
+      "originalTitle": "Join IG"
+    },
+    "linkedIn": {
+      "backgroundColor": "#0077b5",
+      "borderColor": "#0077b5",
+      "href": "",
+      "icon": "<i class='fab fa-linkedin'></i>",
+      "originalTitle": "Join LinkedIn"
+    },
+    "mail": {
+      "backgroundColor": "#222222",
+      "borderColor": "#222222",
+      "href": "organizer@example.com",
+      "icon": "<span class=\"iconify\" data-icon=\"il-email\" data-inline=\"false\"></span>",
+      "originalTitle": "Email contant"
+    },
+    "plurk": {
+      "backgroundColor": "#666",
+      "borderColor": "#666",
+      "href": "",
+      "icon": "<span class='iconify' data-icon='cib:plurk' data-inline='false'></span>",
+      "originalTitle": "Join Plurk"
+    },
+    "twitter": {
+      "backgroundColor": "#1da1f2",
+      "borderColor": "#1da1f2",
+      "href": "",
+      "icon": "<i class='fab fa-twitter'></i>",
+      "originalTitle": "Join Twitter"
+    },
+    "youtube": {
+      "backgroundColor": "#FF0000",
+      "borderColor": "#FF0000",
+      "href": "",
+      "icon": "<i class='fab fa-youtube'></i>",
+      "originalTitle": "Youtube Channel"
+    }
+  },
+  "team": [
+    {
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "thumbnail_url": "https://firebasestorage.googleapis.com/v0/b/gdg-taipei.appspot.com/o/default.png?alt=media&token=26ca67ed-8def-4184-bb78-207f1a08af8b",
+      "title": "GDG Chapter"
+    }
+  ],
+  "whitelist": ["someone@example.com"]
+}
