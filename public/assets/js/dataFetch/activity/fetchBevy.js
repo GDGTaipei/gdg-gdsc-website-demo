@@ -184,11 +184,11 @@ let mainEventGen = async (ActivityList) => {
               justify-content: center;
               align-items: center;padding:15px 15px;"></div>
               <div  style = "display: flex;
-              justify-content: center;">掃描QR碼立刻報名!</div>
+              justify-content: center;">Scan and apply!</div>
             </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-warning btn-block" data-dismiss="modal">關閉 QR Code</button>
+                <button type="button" class="btn btn-warning btn-block" data-dismiss="modal">Close Model</button>
               </div>
             </div>
           </div>
