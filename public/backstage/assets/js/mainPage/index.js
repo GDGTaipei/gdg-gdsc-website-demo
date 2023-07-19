@@ -4,11 +4,11 @@ var database = firebase.database();
 var myData = database.ref(`/main_page/`);
 
 const formMap = {
-  "main_url":"主頁視覺Picture",
+  "main_url":"Main Picture",
   "slogan-title":"Content Title",
-  "slogan-subtitle":"副Content Title",
-  "gdg-intro":"GDG 介紹文案",
-  "speaker-recruit":"招募文宣"
+  "slogan-subtitle":"SubContent Title",
+  "gdg-intro":"GDG Intro",
+  "speaker-recruit":"recruit content"
 }
 let Preformat = ''
 
@@ -42,14 +42,14 @@ const uploadMain = async()=> {
     document.getElementById("message-title").innerHTML = `<i class="material-icons text-success me-2">check</i><span class="me-auto font-weight-bold">Update Success</span>
     <small class="text-body">just now</small>
     <i class="fas fa-times text-md ms-3 cursor-pointer" data-bs-dismiss="toast" aria-label="Close"></i>`
-    document.getElementById("message-body").innerHTML = `「主視覺」的內容已更新`
+    document.getElementById("message-body").innerHTML = `'Main Picture' has been updated`
   }
   catch (error){
     document.getElementById("message-title").innerHTML = `<i class="material-icons text-danger me-2">campaign</i>
     <span class="me-auto font-weight-bold">Update Fail</span>
     <small class="text-body">just now</small>
     <i class="fas fa-times text-md ms-3 cursor-pointer" data-bs-dismiss="toast" aria-label="Close"></i>`
-    document.getElementById("message-body").innerHTML = `「主視覺」內容失敗:<br>${error}`
+    document.getElementById("message-body").innerHTML = `'Main Picture' updated fail with:<br>${error}`
 
   }
 
@@ -65,14 +65,14 @@ const uploadIntroduce = async()=> {
     document.getElementById("message-title").innerHTML = `<i class="material-icons text-success me-2">check</i><span class="me-auto font-weight-bold">Update Success</span>
     <small class="text-body">just now</small>
     <i class="fas fa-times text-md ms-3 cursor-pointer" data-bs-dismiss="toast" aria-label="Close"></i>`
-    document.getElementById("message-body").innerHTML = `「介紹Body Text」的內容已更新`
+    document.getElementById("message-body").innerHTML = `'Intro Body Text' has been updated`
   }
   catch (error){
     document.getElementById("message-title").innerHTML = `<i class="material-icons text-danger me-2">campaign</i>
     <span class="me-auto font-weight-bold">Update Fail</span>
     <small class="text-body">just now</small>
     <i class="fas fa-times text-md ms-3 cursor-pointer" data-bs-dismiss="toast" aria-label="Close"></i>`
-    document.getElementById("message-body").innerHTML = `「介紹Body Text」內容失敗:<br>${error}`
+    document.getElementById("message-body").innerHTML = `'Intro Body Text' updated fail with:<br>${error}`
 
   }
 
